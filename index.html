@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo class</title>
+    <link rel="stylesheet" href="/stayle.css">
+</head>
+<body>
+
+    <h1>Pseudo Class Example</h1>
+
+    <!-- BUTTON & MODAL -->
+    <button>Show Modal</button>
+
+    <div class="modal-container">
+        <div class="modal">
+            <h3>This is Modal</h3>
+            <span>X</span>
+        </div>
+    </div>
+    <!-- END MODAL -->
+
+    <h3>Go to timedoor <i class="fas fa-hand-point-down"></i></h3>
+    <a href="https://timedooracademy.com/" target="_blank">timedoor.com</a>
+
+    <div class="contact-container">
+        <div class="ilustration">
+            <img class="illustration-img" src="assets/contact-illustration.png" alt="" width="800px">
+        </div>
+
+        <!-- FORM SUDAH DIEDIT -->
+        <form 
+            action="https://formsubmit.co/jenajanardhani@gmail.com"
+            method="POST"
+            autocomplete="off"
+        >
+
+            <!-- Disable reCAPTCHA -->
+            <input type="hidden" name="_captcha" value="false">
+
+            <!-- Tetap di halaman yang sama setelah submit -->
+            <input type="hidden" name="_next" class="next">
+
+            <div class="form-container">
+
+                <!-- Input Name -->
+                <div class="input-container">
+                    <div class="icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="form-input">
+                        <input class="input-item" type="text" name="name" id="name" required>
+                        <label for="name" class="form-label">Name</label>
+                    </div>
+                </div>
+
+                <!-- Input City -->
+                <div class="input-container">
+                    <div class="icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="form-input">
+                        <input class="input-item" type="text" name="city" id="city" required>
+                        <label for="city" class="form-label">City</label>
+                    </div>
+                </div>
+
+                <!-- Input Email -->
+                <div class="input-container">
+                    <div class="icon">
+                        <i class="far fa-envelope-open"></i>
+                    </div>
+                    <div class="form-input">
+                        <input class="input-item" type="email" name="email" id="email" required>
+                        <label for="email" class="form-label">Email</label>
+                    </div>
+                </div>
+
+                <div class="modal_container">
+                  <div class="modal">
+                    <h3>Message Sent</h3>
+                    <p> thank you for submitting !</p>
+                  </div>
+                </div>
+
+                <button type="submit">Submit</button>
+
+            </div>
+        </form>
+        <!-- END FORM -->
+
+    </div>
+
+</body>
+</html>
